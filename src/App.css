@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 120px;
+}
+
+.App-header {
+  background-color: white;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.content {
+  display: flex;
+  margin: 0 100px;
+  text-align: left
+}
+
+.subcontent {
+  margin: 0 25px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.content-img {
+  height: 500px;
+}
+
+.footer {
+  margin: auto;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  width: 90%;
+  margin: 50px auto;
+}
