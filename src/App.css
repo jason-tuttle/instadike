@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 120px;
+  height: 150px;
 }
 
 .App-header {
@@ -51,4 +51,11 @@ h2 {
 hr {
   width: 90%;
   margin: 50px auto;
+}
+
+.anchorlink {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+  
 }
