@@ -45,7 +45,17 @@ h2 {
   margin: auto;
   width: 75%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+.footer .info {
+  font-size: 1.5em;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.footer .contact {
+  display: flex;
+  justify-content: space-around; 
 }
 
 hr {
@@ -57,5 +67,16 @@ hr {
   text-decoration: none;
   color: darkblue;
   font-weight: bold;
-  
+  cursor: pointer;
+}
+
+.image-button {
+  cursor: pointer;
+  height: 250px;
+}
+
+.video-toggle {
+  margin: 25px;
+  font-size: 1.5em;
+  font-family: Arial, sans-serif;
 }
