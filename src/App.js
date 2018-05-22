@@ -19,7 +19,6 @@ class App extends Component {
     this.setState({isPlayingVideo: !isPlayingVideo});
   }
   render () {
-    let {isPlayingVideo} = this.state
     return (
       <div className="App">
         <header className="App-header">
@@ -130,12 +129,14 @@ class VideoPlayer extends Component {
     const {isPlayingVideo, toggle} = this.props;
     if (isPlayingVideo) {
       return (
-        <div>
-          <video src={idVideo} controls>
-            Sorry, your browser doesn't support embedded videos,
-            but don't worry, you can <a href={idVideo}>download it</a>
-            and watch it with your favorite video player!
-          </video>
+        <div class="video-player-container">
+          <div>
+            <video src={idVideo} controls>
+              Sorry, your browser doesn't support embedded videos,
+              but don't worry, you can <a href={idVideo}>download it</a>
+              and watch it with your favorite video player!
+            </video>
+          </div>
           <button onClick={toggle} class="video-toggle">Close Video</button>
         </div>
       )
