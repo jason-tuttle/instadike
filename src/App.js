@@ -59,6 +59,7 @@ class App extends Component {
               <ul>
                 <li>Power company substation transformers &mdash; E-Z containment. Call for details. </li>
                 <li>Insta-Dike can be used for fire department dump tank.</li>
+                <li>Approved by the EPA and <a href="https://www.osha.gov">OSHA</a></li>
               </ul>
             </p>
             <p>
