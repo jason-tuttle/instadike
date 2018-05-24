@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import banner from './images/pas.jpg'
 import instadikeBanner from './images/banner.jpg'
 import instaDikeTruckPic from './images/I-D_Tanker_&_Sky.jpg'
-import chemDike from './images/ChemDike_no-pricing.jpg'
+import chemDike from './images/ChemDike_no-pricing_crop.jpg'
 import idVideo from './video/Instadike.mp4'
 import videoPoster from './images/instadike2.jpg'
 import './App.css'
@@ -26,7 +26,9 @@ class App extends Component {
           <img src={instadikeBanner} className="App-logo" alt="insta-dike banner" />
         </header>
         <p className="content">
-          <img src={instaDikeTruckPic} class="content-img" alt="insta-dike with truck" />
+          <div class="image-container">
+            <img src={instaDikeTruckPic} class="content-img" alt="insta-dike with truck" />
+          </div>
           <p class="subcontent">
             <h2>
               The Insta-Dike is a patented spill containment system as required
@@ -76,6 +78,7 @@ class App extends Component {
         <hr />
         <p className="content">
           <p class="subcontent">
+            <h1 class="product-header">CHEM-DIKE</h1>
             <p>
               <h2>
                 The Chem Dike is a patented containment for totes and pallets
@@ -92,16 +95,19 @@ class App extends Component {
               <a href="#contact" class="anchorlink"><h3>Contact us to find a dealer in your area!</h3></a>
             </p>
           </p>
-          <img src={chemDike} alt="chem-dike" className="content-img"/>
+          <div class="image-container">
+            <img src={chemDike} alt="chem-dike" className="content-img"/>
+          </div>
         </p>
         <p>
           <h1>ADD IT UP : IT JUST MAKES SENSE TO PREVENT A SPILL.</h1>
         </p>
-        <p class="footer" id="contact">
+        <div class="footer" id="contact">
           <p class="info">
             <strong><em>Prevent-A-Spill</em></strong> has been providing spill containment systems for over 20 years.
           </p>
           <div class="contact">
+            <img src={banner} className="App-logo" alt="logo" />
             <p><address>
               Prevent-A-Spill,Inc<br />
               P.O. Box 206<br />
@@ -119,7 +125,7 @@ class App extends Component {
               email : prevent-a-spill@excite.com
               </a></p>
           </div>
-        </p>
+        </div>
       </div>
     )
   }
@@ -143,7 +149,7 @@ class VideoPlayer extends Component {
       )
     } else {
       return (
-        <div>
+        <div class="video-player-container">
           <p onClick={toggle} class="anchorlink">Click to see a video of the Insta-Dike in action!</p>
           <img src={videoPoster} onClick={toggle} alt="click to play video" class="image-button" />
         </div>

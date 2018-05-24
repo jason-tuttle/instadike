@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background: no-repeat url('./images/background-red-invert.png');
+  background-position: left -150px;
+  background-size: 100% 20%;
 }
 
 .App-logo {
@@ -7,8 +10,9 @@
 }
 
 .App-header {
-  background-color: white;
+  background-color: transparent;
   height: 150px;
+  width: 1000px;
   padding: 20px;
   color: white;
   display: flex;
@@ -25,37 +29,72 @@
 
 .content {
   display: flex;
-  margin: 0 100px;
-  text-align: left
+  padding-left: 25px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .subcontent {
-  margin: 0 25px;
+  margin: 0;
+  padding: 25px;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+}
+
+.product-header {
+  color: red;
+  font-size: 3em;
+  margin: 0 0 15px 0;
 }
 
 h2 {
   margin: 0;
 }
 
+.image-container {
+  padding: 25px;
+}
+
 .content-img {
-  height: 500px;
+  object-fit: contain;
+  width: 25vw;
 }
 
 .footer {
-  margin: auto;
-  width: 75%;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  background: no-repeat url('./images/background-blue.png');
+  background-position: top;
+  background-size: 100% auto;
+  /* background-color: rgba(255, 255, 255, 0.3); */
 }
 .footer .info {
+  margin: 0 auto;
   font-size: 1.5em;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
+  -webkit-flex: 0 1 50px;
+  -ms-flex: 0 1 50px;
+  flex: 0 0 50px;
+  /* background-color: rgba(255, 255, 255, 0.4); */
 }
 .footer .contact {
+  padding: 10px;
+  flex: 1 0 auto;
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.contact img {
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 5px #acf;
+}
+
+a, a:visited, a:hover, a:active  {
+  color: red;
 }
 
 hr {
@@ -73,6 +112,10 @@ hr {
 .image-button {
   cursor: pointer;
   height: 250px;
+}
+
+.video-player-container {
+  
 }
 
 .video-toggle {
