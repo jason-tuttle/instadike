@@ -5,6 +5,8 @@ import instaDikeTruckPic from './images/I-D_Tanker_&_Sky.jpg'
 import chemDike from './images/ChemDike_no-pricing_crop.jpg'
 import idVideo from './video/Instadike.mp4'
 import videoPoster from './images/instadike2.jpg'
+import NFPA from './images/NFPA_Member.rgb.jpg'
+import PEI from './images/PEI_MEMBER.png'
 import './App.css'
 
 class App extends Component {
@@ -105,6 +107,14 @@ class App extends Component {
         <div class="footer" id="contact">
           <p class="info">
             <strong><em>Prevent-A-Spill</em></strong> has been providing spill containment systems for over 20 years.
+          </p>
+          <p>
+            <a href="https://www.nfpa.org/">
+              <img src={NFPA} class="img" alt="Member of the National Fire Protection Association" height="75"/>
+            </a>
+            <a href="https://www.pei.org/">
+              <img src={PEI} class="img" alt="Member of Petroleum Equipment Institute" height="75"/>
+            </a>
           </p>
           <div class="contact">
             <img src={banner} className="App-logo" alt="logo" />
